@@ -5,14 +5,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <!-- Search engine optimisatin -->
     <meta name="description" content="ASET ALIAS Official Website">
-    <meta name="keywords" content="Aset, Alias, Alias Club, Linux, Amity">
+    <meta name="keywords" content="Aset, Alias, Alias Club, Linux, Amity, Linux User Group, LUG, Amity LUG, Linux Assistance">
     <meta name="author" content="ASET-ALIAS">
 	<!-- End Search Engine Optimisation -->
-    
+	
     <title>ASET-ALiAS : Amity Linux Assistance Sapience</title>
+
+     <!-- Site favicon -->
+     <link href="images/alias_favicon.png" rel="shortcut icon">
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -20,9 +23,12 @@
 	<!-- Font Awesome CSS -->
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Chewy|Josephin+Sans|Pacifico" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
-    
+
     <link href="css/main.css" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -45,21 +51,21 @@
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
-            	
+
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                
-                <a class="navbar-brand page-scroll logoContainer" href="#page-top">
-                    	<img src="images/logo.png" class="logo"/>
+
+                <a class="page-scroll" href="#page-top">
+                    	<img src="images/logo.png" class="logo" width="130" height="auto" style="margin: 5px 20px 5px 5px"/>
                 </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <div class="collapse navbar-collapse navbar-ex1-collapse navigation-links">
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
@@ -72,6 +78,13 @@
                         <a class="page-scroll" href="#events">Events</a>
                     </li>
                     <li>
+
+                    	<a class="page-scroll" href="#alumni" style="margin-top:5px">Alumni</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Our Team</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
@@ -80,14 +93,48 @@
         </div>
         <!-- /.container -->
     </nav>
+    
+    <section id="home" class="home-section">
+    	<div class="container">
+        	<div class="absolute-center">
+            	<img src="images/logo.png" class="coverLogo"/>
+                <p class="motto">Motto goes here...</p>
+            	<br><br>
+                <p class="scrollMore">Scroll to know more</p>
+                <a href="#intro" class="page-scroll"><i class="fa fa-arrow-down scrollIcon"></i></a>
+            </div>
+            </div>
+            
+        </div>
+    </section>
 
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>About</h1>
                     <p class="siteAboutContainer"></p>
+                </div>
+            </div>
+            <div class="row  text-left siteAboutMore">
+            	<div class="siteAboutHistory">
+                	<i class="fa fa-flag iconMed"></i> <span class="heading">The Journey</span>
+                    <p class="description"></p>
+                </div>
+                <br/>
+                <div class="siteAboutServices">
+                	<i class="fa fa-university iconMed"></i> <span class="heading">Why should I join the club?</span>
+                    <div class="row">
+   		                 <div class="col-lg-8">
+            	        	<p class="description">
+                 		   		Join the club and which is just not about certificates or designation(s): <br/>
+                       			<ul class="list-group list-unstyled servicesList"></ul>
+                    		</p>
+                 	  	</div>
+               		    <div class="col-lg-4">
+                    		<a class="joinNowBtnLink" href="#"><button id="joinNowBtn" class="btn-primary">Join Now</button></a>
+                    	</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -99,48 +146,41 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h1>Upcoming Events</h1>
+                    <h1 class="section-header">Upcoming Events</h1>
                  </div>
+
+            </div>
              </div>
              <div class="row eventsList text-center">
-              	<div class="col-lg-3 eventBox">
-                   	<div class="row eventTitle">
-                    	<div class="col-lg-12 text-center">
-                        	<h2>Test Event</h2>
-                        </div>
-                    </div>
-                    <div class="row eventInfo">
-                      	<div class="col-lg-7 eventDesc">
-                        	<div class="row eventDescInfo">
-                            	<div class="col-lg-12">
-                                	<p class="eventDescInfoContainer">Some Event Description here...</p>
-                                </div>
-                            <div class="row eventDescCTA">
-                            	<div class="col-lg-12">
-                                	<button class="btn-primary">Call To Action</button>
-                                </div>
-                            </div>
-                        </div>
-                       </div>
-                       
-                        <div class="col-lg-5 eventTiming text-left">
-                        	<div class="startTimimg">
-                            	<i class="fa fa-clock-o"></i> <span>11:00 AM</span>
-                            </div>
-                            <div class="endTimimg">
-                            	<i class="fa fa-clock-o"></i> <span>1:00 PM</span>
-                            </div>
-                            <div class="eventLocation">
-                            	<i class="fa fa-map-marker"></i> <span>E3-308</span>
-                            </div>
-                            <div class="eventOD">
-                            	<strong>OD</strong> <span class="text-success">YES</span>
-                            </div>
-                        </div>
-                    </div>
-               </div>
-         </div>
-       </div>
+	         </div>
+
+    </section>
+    <!-- Alumni Section -->
+    <section id="alumni" class="alumni-section">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-lg-12 text-center">
+                	<h1 class="section-header">The Alumni</h1>
+                </div>
+            </div>
+            <div class="fa row alumniDescription row-centered">	<!-- Change class from alumniDescription to alumniList for old layout -->
+            	<p></p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-lg-12 text-center">
+                	<h1 class="section-header">Our Team</h1>
+                </div>
+            </div>
+            <div class="row teamList row-centered">
+
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
@@ -148,7 +188,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Contact Us</h1>
+                    <h1 class="section-header">Contact Us</h1>
+                    <div class="row">
+                    
+                    <a href="https://github.com/asetalias">
+                    	<i class="fa fa-github icon-grey"></i>
+                    </a>
+                    <a href="https://www.facebook.com/groups/asetalias/">
+                    	<i class="fa fa-facebook icon-grey"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCKkyqEMLFW3jz-q3nJIFL3g">
+                        <i class="fa fa-youtube icon-grey"></i> 
+                    </a>
+                	<a href="https://groups.google.com/forum/#!forum/amity-linux-group">
+                     	<i class="fa fa-google-plus icon-grey"></i>   
+                 	</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -163,7 +218,7 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
-    
+
     <!-- Functionality Scripts -->
     <script src="js/data.js"></script>
 

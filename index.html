@@ -9,13 +9,16 @@
     <!-- Search engine optimisatin -->
     <meta name="description" content="ASET ALIAS Official Website">
     <meta name="keywords" content="Aset, Alias, Alias Club, Linux, Amity, Linux User Group, LUG, Amity LUG, Linux Assistance">
-    <meta name="author" content="ASET-ALIAS">
+    <meta name="author" content="ALIAS">
 	<!-- End Search Engine Optimisation -->
+    <!-- Browser tab theme color for Chrome on Android -->
+    <meta name="theme-color" content="#D4D4D4">
 	
-    <title>ASET-ALiAS : Amity Linux Assistance Sapience</title>
+    <title>ALiAS</title>
 
      <!-- Site favicon -->
      <link href="images/alias_favicon.png" rel="shortcut icon">
+     <link href="images/alias_favicon.png" rel="apple-touch-icon">	
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -24,12 +27,13 @@
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Anton|Chewy|Josephin+Sans|Pacifico" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Anton|Pacifico|Oswald|Roboto+Condensed|Lobster|Aladin" rel="stylesheet">
+	
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
 
     <link href="css/main.css" rel="stylesheet" />
+	<link href="css/colors.css" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -42,9 +46,33 @@
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+	<div class="preloader">
+    	<div class="content">
+        	<div class="preloader-content"><img src="images/alias_favicon.png" class="logo"><br>LOADING</div>
+        </div>
+    </div>
 	<div class="minScreenSizeOverlay">
-    	<div>
-        	You Need a Bigger Display!
+    	<div class="contentContainer">
+	    	<div class="content">
+    	    	<img src="images/ALiAS.png" class="logo"/><br>
+				Zoom out in browser or use a bigger display!
+	        </div>
+        </div>
+    </div>
+    <div id="color-chooser">
+    	<ul>
+        	<a href="#blue" class="colorChanger"><li class="blue"></li></a>
+           	<a href="#red" class="colorChanger"><li class="red"></li></a>
+          	<a href="#yellow" class="colorChanger"><li class="yellow"></li></a>
+            <a href="#green" class="colorChanger"><li class="green"></li></a>
+        </ul>
+    </div>
+    <div class="flashbox">
+    	<div class="content">
+        	<a class="closeBtn"><i class="fa fa-remove"></i></a>
+            <div class="flashBox-content">
+	        	&nbsp;
+            </div>
         </div>
     </div>
     <!-- Navigation -->
@@ -60,7 +88,7 @@
                 </button>
 
                 <a class="page-scroll" href="#page-top">
-                    	<img src="images/logo.png" class="logo" width="130" height="auto" style="margin: 5px 20px 5px 5px"/>
+                    	<img src="images/logo.png" id="navbarLogo" class="logo" width="130" height="auto" style="margin: 5px 20px 5px 5px"/>
                 </a>
             </div>
 
@@ -73,6 +101,9 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#intro">About</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="https://theletstream.com/techore/author/asetalias">Blog</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#events">Events</a>
@@ -94,17 +125,16 @@
         <!-- /.container -->
     </nav>
     
-    <section id="home" class="home-section">
+  <section id="home" class="home-section">
     	<div class="container">
         	<div class="absolute-center">
             	<img src="images/logo.png" class="coverLogo"/>
-                <p class="motto">Motto goes here...</p>
+                <p class="motto"></p>
             	<br><br>
                 <p class="scrollMore">Scroll to know more</p>
                 <a href="#intro" class="page-scroll"><i class="fa fa-arrow-down scrollIcon"></i></a>
             </div>
             </div>
-            
         </div>
     </section>
 
@@ -113,15 +143,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="siteAboutContainer"></p>
+                    <p class="siteAboutContainer animated"></p>
                 </div>
             </div>
-            <div class="row  text-left siteAboutMore">
+            <div class="row  text-left siteAboutMore animated">
             	<div class="siteAboutHistory">
                 	<i class="fa fa-flag iconMed"></i> <span class="heading">The Journey</span>
                     <p class="description"></p>
                 </div>
-                <br/>
+                <br>
                 <div class="siteAboutServices">
                 	<i class="fa fa-university iconMed"></i> <span class="heading">Why should I join the club?</span>
                     <div class="row">
@@ -132,7 +162,7 @@
                     		</p>
                  	  	</div>
                		    <div class="col-lg-4">
-                    		<a class="joinNowBtnLink" href="#"><button id="joinNowBtn" class="btn-primary">Join Now</button></a>
+                    		<a class="joinNowBtnLink" href="#"><button id="joinNowBtn">Join Now</button></a>
                     	</div>
                     </div>
                 </div>
@@ -142,18 +172,28 @@
 
 
     <!-- Events Section -->
-    <section id="events" class="events-section">
+    <section id="events" class="events-section theme-bg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h1 class="section-header">Upcoming Events</h1>
+                    <h1 class="section-header" id="section-color-fix">Upcoming Events</h1>
                  </div>
-
-            </div>
-             </div>
-             <div class="row eventsList text-center">
+				  <div class="row eventsList text-center" id="eventsListContainer"> 
 	         </div>
-
+			<div class="col-lg-12 text-right">
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLScpSM7nisQQKlBB5oYdkeo2cMV6I0b__F_KowLgbUJePyyLZg/viewform?usp=sf_link"><button class="event-buttons" id="button-color-fix">Want to host an event?</button></a>
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSf9l-82I3DhhDkpSjJol86lt4QQQyB49z97ovoR9HT64uEK0A/viewform?usp=sf_link"><button class="event-buttons" id="button-color-fix2">Suggestion for future event?</button></a>
+			</div>
+           </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="section-header" id="section-color-fix2">Previous Webinars</h1>
+            </div>
+             <div class="row eventsList text-center" id="webinarsListContainer">
+	         </div>
+       </div>
     </section>
     <!-- Alumni Section -->
     <section id="alumni" class="alumni-section">
@@ -170,7 +210,7 @@
     </section>
     
     <!-- Team Section -->
-    <section id="team" class="team-section">
+    <section id="team" class="team-section theme-bg">
     	<div class="container">
         	<div class="row">
             	<div class="col-lg-12 text-center">
@@ -189,26 +229,31 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="section-header">Contact Us</h1>
-                    <div class="row">
-                    
+                    <div class="row text-center">
                     <a href="https://github.com/asetalias">
                     	<i class="fa fa-github icon-grey"></i>
                     </a>
-                    <a href="https://www.facebook.com/groups/asetalias/">
-                    	<i class="fa fa-facebook icon-grey"></i>
+                    <a href="https://www.facebook.com/asetalias/">
+                    	<i class="fa fa-facebook icon-grey hover-blue"></i>
                     </a>
                     <a href="https://www.youtube.com/channel/UCKkyqEMLFW3jz-q3nJIFL3g">
-                        <i class="fa fa-youtube icon-grey"></i> 
+                        <i class="fa fa-youtube icon-grey hover-red"></i> 
                     </a>
+					<a href="mailto:asetalias1@gmail.com">
+						<i class="fa fa-envelope icon-grey hover-green"></i>  
+					</a>
                 	<a href="https://groups.google.com/forum/#!forum/amity-linux-group">
-                     	<i class="fa fa-google-plus icon-grey"></i>   
+                     	<i class="fa fa-google-plus icon-grey hover-yellow"></i>   
                  	</a>
                     </div>
                 </div>
             </div>
         </div>
+		<div>
+			&nbsp;
+		</div>
     </section>
-
+	
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -217,11 +262,21 @@
 
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
-
+    <script src="js/scrolling-nav.js"></script> 
+    
+    <script src="js/scrollreveal.js"></script>   
+    <!-- Parallax effect JavaScript -->
+    <script src="js/parallax.js"></script>
     <!-- Functionality Scripts -->
     <script src="js/data.js"></script>
-
+    <script>
+		$(document).ready(function(e) {
+			$(".section-header").addClass("animated");
+            window.sr = ScrollReveal({origin:'bottom'});
+			sr.reveal(".animated",{duration:1000});
+			sr.reveal(".eventBox",{duration:2000},500);
+			$(".preloader").delay(1000).fadeOut(2000);
+        });
+			</script>
 </body>
-
 </html>

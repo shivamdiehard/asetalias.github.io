@@ -20,10 +20,12 @@
      <link href="images/ALiAS.png" rel="shortcut icon">
      <link href="images/ALiAS.png" rel="apple-touch-icon">
 
-    <!-- Bootstrap Core CSS -->
+     <link href="css/bootstrap-tour.min.css" rel="stylesheet">
+     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
-	<!-- Font Awesome CSS -->
+    <!-- Font Awesome CSS -->
     <link href="css/font-awesome.min.css" rel="stylesheet" />
 
     <!-- Google Fonts -->
@@ -89,13 +91,13 @@
                     <li class="hidden">
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
-                    <li>
+                    <li class="one">
                         <a class="page-scroll" href="#intro" data-toggle="collapse" data-target=".navbar-ex1-collapse">About</a>
                     </li>
-					<li>
+					<li class="two">
                         <a class="page-scroll" href="https://theletstream.com/techore/author/asetalias">Blog</a>
                     </li>
-                    <li>
+                    <li class="three">
                         <a class="page-scroll" href="#events" data-toggle="collapse" data-target=".navbar-ex1-collapse">Events</a>
                     </li>
 					<li>
@@ -143,7 +145,7 @@
                     <!-- This div contains "How the club came to be?" -->
                 	<i class="fa fa-flag iconMed"></i> <span class="heading">The Journey</span>
                      <p class="description">
-                         <!-- Content of this section is added through JavaScript 
+                         <!-- Content of this section is added through JavaScript
                             data variable: siteAboutHistory
                          -->
                      </p>
@@ -157,7 +159,7 @@
             	        	<p class="description">
                  		   		Join the club and which is just not about certificates or designation(s): <br/>
                        			<ul class="list-group list-unstyled servicesList">
-                                       <!-- This List contains all that club offers 
+                                       <!-- This List contains all that club offers
                                             Format: <li class="fa"><span>Service description</span></li>
                                             fa class added in li is used to add Ticks using pseudo elements
                                        -->
@@ -166,7 +168,7 @@
                  	  	</div>
                		    <div class="col-lg-4">
                     		<a class="joinNowBtnLink" href="#">
-                                <!-- This anchor contains link to Registration form of the club 
+                                <!-- This anchor contains link to Registration form of the club
                                     link is added using JavaScript
                                     data variable: joinNowBtnLink
                                 -->
@@ -186,7 +188,7 @@
                     <h1 class="section-header theme-bg-primary" id="upcomingEventsHeader">Upcoming Events</h1>
                 </div>
 				<div class="row eventsList text-center" id="eventsListContainer">
-                    <!-- This section contains all the upcoming events 
+                    <!-- This section contains all the upcoming events
                         <div class="col-lg-3 eventBox col-centered text-center">
                             <div class="row eventTitle">
                                 <div class="col-lg-12 text-center">
@@ -235,7 +237,7 @@
                                 </div>
                             </div>
                         </div>
-                    --> 
+                    -->
 				</div>
            </div>
         </div>
@@ -250,7 +252,7 @@
                     <h1 class="section-header theme-bg-primary" id="previousWebinarsHeader">Previous Webinars</h1>
 				</div>
              <div class="row eventsList text-center" id="webinarsListContainer">
-             <!-- Template : New 
+             <!-- Template : New
              	<div class="col-lg-3 youtubeBox col-centered text-center">
                 	<div class="row youtubeVideoContainer">
                     	<div class="col-lg-12">
@@ -376,6 +378,8 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-tour.min.js"></script>
+    <script src="js/script.js"></script>
 
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
@@ -398,6 +402,6 @@
 
         });
 	</script>
-    
+
 </body>
 </html>
